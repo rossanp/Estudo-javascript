@@ -1,3 +1,5 @@
+/*
+
 var botao = document.querySelector('.btn');
 
 botao.addEventListener('click', function () {
@@ -19,6 +21,8 @@ botao.addEventListener('click', function () {
       cont.style.gridTemplateColumns = "repeat(4, 1fr)";
     }
 })
+
+*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
