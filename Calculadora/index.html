@@ -1,16 +1,82 @@
-Digite um número: <input type="number" placeholder="Número 1" id="valor-1"><br>
-<label for="sinal">Escolha um sinal: </label>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<select id="sinal">
-  <option value="soma" id="soma">Soma +</option>
-  <option value="sub" id="sub">Subtração -</option>
-  <option value="mult" id="mult">Multiplicação *</option>
-  <option value="div" id="div">Divisão /</option>
-  <option value="porc" id="porc">Porcentagem %</option>
-</select><br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora</title>
+</head>
 
-Digite um número: <input type="number" placeholder="Número 2" id="valor-2"><br>
-<input type="button" id="btn-soma" value="Calcular" onclick="calc()">
-<p id="result">
-  Resultado aqui!
-</p>
+<body>
+  <div class="calculo" style="display: none">
+    Digite um número: <input type="number" placeholder="Número 1" id="valor-1"><br>
+    <label for="sinal">Escolha um sinal: </label>
+
+    <select id="sinal">
+      <option value="soma" id="soma">Soma +</option>
+      <option value="sub" id="sub">Subtração -</option>
+      <option value="mult" id="mult">Multiplicação *</option>
+      <option value="div" id="div">Divisão /</option>
+      <option value="porc" id="porc">Porcentagem %</option>
+    </select><br>
+
+    Digite um número: <input type="number" placeholder="Número 2" id="valor-2"><br>
+    <input type="button" id="btn-soma" value="Calcular" onclick="calc()">
+    <p id="result">
+      Resultado aqui!
+    </p>
+  </div>
+
+  <div class="calculadora">
+    <div class="visor">
+      <input type="number" name="visor" id="visor" placeholder="0123456789">
+      <div class="geral-btn">
+        <div class="btn1">
+          <input type="button" value="1">
+        </div>
+        <div class="btn2">
+          <input type="button" value="2">
+        </div>
+        <div class="btn3">
+          <input type="button" value="3">
+        </div>
+        <div class="btn4">
+          <input type="button" value="4">
+        </div>
+        <div class="btn5">
+          <input type="button" value="5">
+        </div>
+        <div class="btn6">
+          <input type="button" value="6">
+        </div>
+        <div class="btn7">
+          <input type="button" value="7">
+        </div>
+        <div class="btn8">
+          <input type="button" value="8">
+        </div>
+        <div class="btn9">
+          <input type="button" value="9">
+        </div>
+        <div class="btn+">
+          <input type="button" value="+">
+        </div>
+        <div class="btn-">
+          <input type="button" value="-">
+        </div>
+        <div class="btn*">
+          <input type="button" value="*">
+        </div>
+        <div class="btn/">
+          <input type="button" value="/">
+        </div>
+        <div class="btn=">
+          <input type="button" value="=">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
