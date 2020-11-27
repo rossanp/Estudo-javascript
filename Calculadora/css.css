@@ -1,0 +1,50 @@
+.calculadora, #visor  {
+    border: 1px solid;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora {
+    height: 100%;
+}
+
+.geral-btn {
+    margin-top: 2px;
+    border: 1px solid;
+    border-radius: 8px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20% 80%;
+}
+
+.btn-sinais-top {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn-num {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.btn-sinais-lat {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
