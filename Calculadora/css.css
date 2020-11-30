@@ -27,7 +27,28 @@
     grid-column-start: 1;
     grid-column-end: 5;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 25%) 50%;
+    justify-content: center;
+}
+
+.btn-st-c {
+    border-radius: 15px;
+    width: 90%;
+    margin: 2px 5px;
+    background-color: aqua;
+}
+
+.btn-st {
+    border-radius: 15px;
+    width: 80%;
+    margin: 2px 5px;
+    background-color: rgb(8, 243, 8);
+}
+
+.btn-n {
+    border-radius: 15px;
+    width: 80%;
+    margin: 2px 5px;
 }
 
 .btn-num {
