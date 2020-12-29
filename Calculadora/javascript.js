@@ -19,9 +19,11 @@ function calc(){
     document.getElementById("result").innerHTML = "A divisão é " + (resultado = parseInt(valor1)/parseInt(valor2)) + ".";
     break;
   case "porc":
-    document.getElementById("result").innerHTML = "A porcentagem é " + (resultado = (parseInt(valor1)/ 100) * parseInt(valor2)) + ".";
+    document.getElementById("result").innerHTML = "A porcentagem é " + (resultado = (parseInt(valor2 * valor1) / 100)) + ".";
     break;
   default:
     document.getElementById("result").innerHTML = "Valores incorretos.";
   }
 }
+
+/* porcento: (valor2 * valor1) / 100 */

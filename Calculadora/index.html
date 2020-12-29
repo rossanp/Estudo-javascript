@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="css.css">
-
   <title>Calculadora</title>
+
+  <style>
+    input{
+      width: 112px;
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+    select {
+      margin-left: 8px;
+    }
+  </style>
+
 </head>
 
 <body>
-  <div class="calculo" style="display: none">
+  <div class="calculo">
     Digite um número: <input type="number" placeholder="Número 1" id="valor-1"><br>
     <label for="sinal">Escolha um sinal: </label>
 
@@ -31,64 +40,7 @@
     </p>
   </div>
 
-  <div class="calculadora">
-    <div class="visor">
-      <input type="text" name="visor" id="visor" placeholder="0123456789">
-      <div class="geral-btn">
-        <div class="btn-sinais-top">
-            <div class="btn*">
-              <input class="btn-st" type="button" value="*">
-            </div>
-            <div class="btn/">
-              <input class="btn-st" type="button" value="/">
-            </div>
-            <div class="btn=">
-              <input class="btn-st-c" type="button" value="C">
-            </div>
-        </div>
-        <div class="btn-num">
-          <div class="btn1">
-            <input class="btn-n" type="button" value="1">
-          </div>
-          <div class="btn2">
-            <input class="btn-n" type="button" value="2">
-          </div>
-          <div class="btn3">
-            <input class="btn-n" type="button" value="3">
-          </div>
-          <div class="btn4">
-            <input class="btn-n" type="button" value="4">
-          </div>
-          <div class="btn5">
-            <input class="btn-n" type="button" value="5">
-          </div>
-          <div class="btn6">
-            <input class="btn-n" type="button" value="6">
-          </div>
-          <div class="btn7">
-            <input class="btn-n" type="button" value="7">
-          </div>
-          <div class="btn8">
-            <input class="btn-n" type="button" value="8">
-          </div>
-          <div class="btn9">
-            <input class="btn-n" type="button" value="9">
-          </div>
-        </div>
-        <div class="btn-sinais-lat">
-          <div class="btn+">
-            <input class="btn-st" type="button" value="+">
-          </div>
-          <div class="btn-">
-            <input class="btn-st" type="button" value="-">
-          </div>
-          <div class="btn=">
-            <input class="btn-st" type="button" value="=">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <script src="javascript.js"></script>
 </body>
 
 </html>
